@@ -2,7 +2,7 @@
 layout: post
 title: Hello world!
 date:   2013-08-12 21:40:00
-categories: web
+category: web
 ---
 
 Hello, is it me you're looking for?
