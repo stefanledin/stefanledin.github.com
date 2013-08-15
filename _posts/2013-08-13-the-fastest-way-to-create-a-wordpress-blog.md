@@ -3,6 +3,7 @@ layout: post
 title: The fastest way to create a Wordpress blog
 date: 2013-08-13 06:13:00
 category: web
+comments: true
 ---
 
 Yeah, I really think this is THE fastest way to create a new Wordpress project. You don't even have to leave Sublime.  
