@@ -17,35 +17,32 @@
 
     <div class="container">
 
-        <section class="row jumbotron">
-            <div class="col-12">
-                <h1 class="title">{{ site.name }}</h1>
-                <p class="lead text-info">A blog about nothing</p>
+        <section class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="title">{{ site.name }}</h1>
+                    <p class="lead text-info">A blog about nothing</p>
+                </div>
             </div>
         </section>
 
-        <section class="posts row">
-            <div class="col-12">
-                {% for post in site.posts %}
-                    <article>
-                        <header>
-                            <h2>{{ post.title }}</h2>
-                        </header>
-                        <div class="content">
-                            {{post.content}}
-                        </div>
-                    </article>
-                    <hr>
-                {% endfor %}
-            </div>
-        </section>  
+        <div role="main" class="row">
 
-        <footer class="row">
-            <div class="col-12">
-                <a href="http://twitter.com/stefanledin">@stefanledin</a>
-            </div>
-        </footer>
-    
+            {{ content }}
+
+            <aside class="col-xs-12 col-md-4">
+                {% if site.posts.length != 0 %}
+                    <h4>Latest posts</h4>
+                    <div class="list-group">
+                        {% for post in site.posts limit:5 %}
+                            <a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </aside>
+
+        </div>
+
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
