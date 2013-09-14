@@ -41,5 +41,5 @@ You don't wanna do this. Instead, why don't you just set up a local environment 
         )
     );
     {% endhighlight %}
-This should look pretty familiar, right? It's exactly the same as the regular database.php, but only the part of it that you wanna override.
+This should look pretty familiar, right? It's exactly the same as the regular database.php, but only the part of it that you want to override.
 
