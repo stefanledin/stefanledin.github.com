@@ -55,7 +55,7 @@ Make a random change in index.html and make a new commit.
 git add index.html  
 git commit -m 'Second commit'
 {% endhighlight %}
-But wait, you don't wanna write your credentials every time you're going to push changes to the server. You can instead save them to the config file.
+But wait, you don't wanna write your credentials every time you're going to push changes to the server. Instead you can save them to the config file:
 {% highlight php %}
 git config git-ftp.user exampleusername.com
 git config git-ftp.url ftp://ftp.exampleserver.com/optionalsubdirectory
