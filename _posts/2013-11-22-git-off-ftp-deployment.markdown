@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git off FTP deployment!"
-date:   2013-11-22 23:45:00
+date:   2013-11-23 00:26:00
 category: web
 comments: true
 ---
