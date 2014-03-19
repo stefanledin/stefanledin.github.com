@@ -7,7 +7,7 @@ comments: true
 ---
 
 Workflows and best practices are something that I am kind of obsessed about.  What's the best way to concatenate and minify scripts and stylesheets? To optimize images? To manage dependencies?  
-When working with static files, [Yeoman](http://yeoman.io) is the best tool around I think. But how often do we have the pleasure to work with only static HTML files? With no server-side stuff involved at all? The answer is: almost never.  
+When working with static files, I think [Yeoman](http://yeoman.io) is the best tool around. But how often do we have the pleasure to work with only static HTML files, with no server-side stuff involved at all? The answer is: almost never.  
 Whenever there's somehing going on server-side, Wordpress is not far away. But hey, we all love Wordpress, don't we?  
 I love WP, but I also love good workflows. So what's the best workflow for a Wordpress project? Well, I've spent many, many hours researching the subject and trying to find the answer for that question. But the thing is that I still don't know the answer and I might never find it.  It's like the Kennedy assassination, we might never find out the truth.  
 However, we can always have theories about what the best workflow is or if the CIA was involved or not.  
@@ -19,7 +19,7 @@ But what should we include into our Git repository? The theme or the whole Wordp
 When it's time to upgrade Wordpress to the latest version, you could do that on your local installation and then push it up to the production server.  
 
 ###Collaborate
-Okey, but if you're a part of a team who works on the project? How would that workflow look like?  
+Okey, but if you're part of a team who works on the project? How would that workflow look like?  
 Well, you could have a repository for the project at [Github](http://www.github.com) which should be the center of the workflow. Nothing should be deployed to the production server before it has been merged with the Github repo.  
 Let's pretend that John Doe starts working on a big, new feature on the site. He does a ``git pull`` from Github, thus ensureing that he's completley up to date with the code.  
 John works on this new feature durning a couple of weeks and is ready to deploy it. However, meanwhile John has worked on the new feature, Jane Doe has made several bugfixes and deployed them. So before John kan push up the new feature, he has to do a ``git pull`` and merge his changes with Janes.  
@@ -54,5 +54,5 @@ Let's say that Jane Doe are going to work on a site that she released a couple o
 Another good thing with WP Migrate DB Pro is that it also keeps the ``uploads/`` folder in sync. With the search and replace workflow, you would have to download that folder from the production server manually.  
 
 ##TL;DR
-The perfect Wordpress development workflow might not even exist. The workflow in the 5K+ characters described above is definitly the best one. It's just a theory of how it could look like.  
+The perfect Wordpress development workflow might not even exist. The workflow described above is definitely not the best one, but it's just a theory of what it could look like.  
 Please, stop laughing at me and tell me your thoughts about the subject instead. Until then, Github, Dploy and WP Migrate DB Pro might be ingredients that could make a workflow that's not perfect, but is working. 
