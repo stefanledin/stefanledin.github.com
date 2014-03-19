@@ -9,7 +9,7 @@ comments: true
 Workflows and best practices are something that I am kind of obsessed about.  What's the best way to concatenate and minify scripts and stylesheets? To optimize images? To manage dependencies?  
 When working with static files, [Yeoman](http://yeoman.io) is the best tool around I think. But how often do we have the pleasure to work with only static HTML files? With no server-side stuff involved at all? The answer is: almost never.  
 Whenever there's somehing going on server-side, Wordpress is not far away. But hey, we all love Wordpress, don't we?  
-I love WP, but I also love good wordflows. So what's the best workflow for a Wordpress project? Well, I've spent many, many hours researching the subject and trying to find the answer for that question. But the thing is that I still don't know the answer and I might never find it.  It's like the Kennedy assassination, we might never find out the truth.  
+I love WP, but I also love good workflows. So what's the best workflow for a Wordpress project? Well, I've spent many, many hours researching the subject and trying to find the answer for that question. But the thing is that I still don't know the answer and I might never find it.  It's like the Kennedy assassination, we might never find out the truth.  
 However, we can always have theories about what the best workflow is or if the CIA was involved or not.  
 Regarding Wordpress, I've finally come up with a theory about what the perfect workflow looks like.
 
