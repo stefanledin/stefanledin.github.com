@@ -7,7 +7,7 @@ comments: true
 ---
 
 In my previous post about Git workflows with Wordpress, I suggested that you should put all files, including plugins and core files, under version controll. For example, Chris Coyer does this in his [screencast](http://css-tricks.com/video-screencasts/109-getting-off-ftp-and-onto-git-deployment-with-beanstalk/) about this subject. 
-However, I don't think it is the best way to work in every possible situation. For example, the state of the art PHP framework Laravel is a Composer package. Thus it will be stored in the ``vendor`` directory which is by default listed in the .gitignore file. So in the context of a Laravel project, all files except the framework itself and its dependencies are included in the Git repository. That would correspond to not include Wordpress or the required plugins in your repository. 
+However, I don't think it's the best way to work in every possible situation. For example, the state of the art PHP framework [Laravel](http://laravel.com) is a Composer package. Thus it will be stored in the ``vendor`` directory which is by default listed in the ``.gitignore`` file. So in the context of a Laravel project, all files except the framework itself and its dependencies are included in the Git repository. That would correspond to not include Wordpress or the required plugins in your repository. 
 But Wordpress isn't Laravel and we don't have the fancy ``composer.json`` file around. We can't do ``composer install`` or ``composer update`` to get Wordpress and all the standard plugin that we always use installed. (Unless we use [Wordpress Packagist](http://wpackagist.org) which might be a good solution).  
 
 
