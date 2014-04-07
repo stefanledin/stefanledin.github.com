@@ -28,7 +28,7 @@ wp/
 So when it's time to upgrade Wordpress to the latest version, you update the submodule and checkout the tag you wanna use. ``git checkout 3.8.1`` for example.  
 I think this could be a pretty good solution, but as I said, it requires a bit of configuration in ``wp-config.php`` to make it find the Wordpress itself and the content directory. But remember, you need to have git installed on the production server to make this work.  
 
-A similar approach that I learnd about this weekend is to but the ``wp-content/`` folder under version control. You'll ignore the ``uploads/`` folder of course, but your themes and plugins will be taken cared of by Git, which is most important.  
+A similar approach that I learnd about this weekend is to put the ``wp-content/`` folder under version control. You'll ignore the ``uploads/`` folder of course, but your themes and plugins will be taken cared of by Git, which is most important.  
 With [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/) you and your collegues can keep the local databases in sync with the production database.  
 
 As you might have guessed, I've changed my mind about what should go into the Git repo and what shouldn't. But I still think that it all comes down to the specific project that you're working on just now.  
