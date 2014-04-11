@@ -8,12 +8,12 @@ comments: true
 
 Durning the last couple of months I've played around quite a bit with Vagrant. I'm sure that you've heard about Vagrant and understood that it's some new, cool thing that everybody should use.  
 You may also have read that [MAMP](http://www.mamp.info) is bad and Vagrant is good, and now you've came across a little guide on how to replace MAMP with Vagrant.  
-I'll be using the excellent [Vaprobash](https://github.com/fideloper/Vaprobash) script to the Vagrant server up and running.
+I'll be using the excellent [Vaprobash](https://github.com/fideloper/Vaprobash) script to get the Vagrant server up and running.
 ##Installation
 If you don't have [Virtualbox](http://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/downloads.html) installed on your computer, go ahead and do that first!  
 
 1. Create a new directory somewhere on your computer. That will correspond to what previously been your ``htdocs`` folder.
-2. Download Vaprobash using the terminal. ``curl -L http://bit.ly/vaprobash > Vagrantfile``
+2. ``cd`` to the directory in the terminal and download Vaprobash. ``curl -L http://bit.ly/vaprobash > Vagrantfile``
 3. Open the Vagrantfile and uncomment the lines where Apache and MySQL are getting installed. At the time of this writing, it's line 125 and 140.
 4. Run ``vagrant up`` and wait for everything to get downloaded and installed. (This might take a while).
 
@@ -25,7 +25,7 @@ First things first. Working with virtual hosts is very easy with MAMP Pro. It's 
 With that said, here's how you create a vhost called ``project1.dev`` 
 
 1. Login to the server: ``vagrant ssh``
-2. Add the name of the vhost and the path: ``sudo vhost -s project1.dev -d /vagrant/project1``
+2. Add the name of the vhost and the path to the project: ``sudo vhost -s project1.dev -d /vagrant/project1``
 3. Exit out of the server: ``exit``
 4. Edit the host file using Vim or your editor of choise: ``sudo vim /etc/hosts``
 5. Add the following line: ``192.168.33.10   project1.dev``
